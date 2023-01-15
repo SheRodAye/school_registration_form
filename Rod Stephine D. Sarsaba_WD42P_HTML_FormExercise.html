@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="">
+        <div class="container">
+            <div><h1 style="margin-bottom: 2.5rem;">School Registration Form</h1></div>
+            <div><h3>1. Child's details</h3></div>
+            <!--Name of child-->
+            <table>
+            <tr>
+            <td><label for="firstName">Child's First name(s)</label>
+                <input type="text" name="firstName" placeholder="Enter your first name" required>
+            </td>
+            <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td><label for="lastName">Child's Last name</label>
+                <input type="text" name="lastName" placeholder="Enter your last name" required>
+            </td>
+            </tr>
+            <br \>
+            <!--birth of child and Gender-->    
+            <tr>
+            <td><label for="birthDate">Child's Date of Birth</label>
+                <input type="date" name="birthDate" data-date-split-input="true" required>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <p>Gender</p>
+                <input type="radio" name="male" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="female" value="Female">
+                <label for="female">Female</label>
+            </td>
+            </tr>
+            </table>
+            <br \>
+            <br \>
+            <table>
+            <!--Address information-->
+            <tr>
+                <td>
+                <h4>Home Address</h4>
+                <label for="address">Address</label>
+                <input type="text" name="address" placeholder="1234 Main St" class="block" required>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address2">Address 2 (optional)</label>
+                <input type="text" name="address2" placeholder="1234 Main St" class="block" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zipcode">Zip</label>
+                    <input type="number" placeholder="1012" class="block" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phoneNum">Phone Number</label>
+                    <input type="number" name="phoneNum" placeholder="(0912) 345-6789" class="block" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dateOfMoving">Date of moving to this address</label>
+                    <input type="date" data-date-split-input="true" class="block" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <!--Parents details-->
+        <hr \>
+        <br>
+        <br>
+        <h3 style="margin-bottom: 2rem;">2. Parents/Careers details (please tick)</h3>
+        <table>
+            <tr>
+                <td>
+                    <label for="firstName2">Firstname</label>
+                    <input style="margin-right: 7rem; " type="text" name="firstName2" required>
+                
+                    <label for="surName2">Surname</label>
+                    <input type="text" name="surName2" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Salutation</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="mr">
+                    <label for="mr">Mr</label>
+                
+                    <input type="radio" name="mrs">
+                    <label for="mrs">Mrs</label>
+                
+                    <input type="radio" name="miss">
+                    <label for="miss">Miss</label>    
+                
+                    <input type="radio" name="ms">
+                    <label for="ms">Ms</label>
+                
+                    <input type="radio" name="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><h4>Relationship To The Child</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="relationship">
+                        <option selected disabled>Select</option>
+                        <option value="1">Mother</option>
+                        <option value="2">Father</option>
+                        <option value="3">Step Parent</option>
+                        <option value="4">Foster Parent</option>
+                        <option value="5">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobile Number">Mobile Number</label>
+                    <input style="margin-right: 4.5rem; " type="tel" name="mobile Number" placeholder="(0912) 345-6789" required>
+
+                    <label for="email address">Email Address</label>
+                    <input type="email" name="email address" placeholder="juan@gmail.com" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr \>
+        <br>
+        <br>
+        <!--Another information-->
+        <h3>3. Further information</h3>
+        <table>
+            <p style="margin-bottom: 2rem;">If you have any older children attending the school, * please provide details below:</p>
+            <div>
+            <tr>
+                <td>
+                    <label for="sibling fullname">Sibling's full name</label>
+                    <input type="text" name="sibling fullname">
+
+                    <label for="sibling datebirth">Sibling's date of birth</label>
+                    <input type="date" name="sibling datebirth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sibling fullname">Sibling's full name</label>
+                    <input type="text" name="sibling fullname">
+
+                    <label for="sibling datebirth">Sibling's date of birth</label>
+                    <input type="date" name="sibling datebirth">
+                </td>
+            </tr>
+        </div>
+        </table>
+        <table>
+            <h3 style="margin-top: 3rem; text-align:center;">nursery provision in 5 morning or 5 afternoon sessions, as shown below.</h3>
+                <h4 style="margin-bottom: 1rem; text-align:center;">**Please tick which sessions you prefer**</h4>
+            <tr>
+                <td>
+                    <input  type="checkbox" name="morning">
+                    <label style="line-height: 0;" for="morning">8:00 AM - 11:00 AM</label>
+                </td>
+            </tr>
+            <tr class="footerSec">
+                <td>
+                    <input type="checkbox" name="afternoon">
+                    <label style="line-height: 0;" for="afternoon">1:00 PM - 4:00 PM</label>
+                </td>
+        </table>
+        <h4 style="margin-top: 2rem; margin-bottom: 0.5rem;">Note:</h4>
+        <p style="margin-bottom: 2rem;">Possible parental preference will be taken into account but no guarantee can be given as the allocation of places depends on whether a vacancy exists in the morning of the afternoon. It would be helpful, therefore, if you could also tick the "Either session" if you do not have a strong preference.</p>
+        <input class="btn" type="submit" value="Submit">
+        </div>
+        </form>
+    </body>
+</html>
